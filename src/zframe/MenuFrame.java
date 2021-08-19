@@ -13,7 +13,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.ChangeEvent;
 
-public class MainFrame {
+public class MenuFrame {
 
 	private JFrame frame;
 	static AutoClicker clicker = new AutoClicker();
@@ -25,7 +25,7 @@ public class MainFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MainFrame window = new MainFrame();
+					MenuFrame window = new MenuFrame();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -37,7 +37,7 @@ public class MainFrame {
 	/**
 	 * Create the application.
 	 */
-	public MainFrame() {
+	public MenuFrame() {
 		initialize();
 	}
 
