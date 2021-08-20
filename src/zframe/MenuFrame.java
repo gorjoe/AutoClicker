@@ -53,6 +53,11 @@ public class MenuFrame {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
+    JLabel versionNo = new JLabel("v1.0");
+		btnStart.setFont(new Font("新細明體", Font.PLAIN, 14));
+		btnStart.setBounds(250, 212, 87, 23);
+		frame.getContentPane().add(versionNo);
+		
 		JButton btnStart = new JButton("開始");
 		btnStart.setFont(new Font("新細明體", Font.PLAIN, 18));
 		btnStart.setBounds(109, 212, 87, 23);
