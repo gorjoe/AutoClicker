@@ -53,10 +53,11 @@ public class MenuFrame {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-    JLabel versionNo = new JLabel("v1.0");
-		btnStart.setFont(new Font("新細明體", Font.PLAIN, 14));
-		btnStart.setBounds(250, 212, 87, 23);
-		frame.getContentPane().add(versionNo);
+		JLabel ver_author = new JLabel("Made by gorjoe  v1.0");
+		ver_author.setHorizontalAlignment(SwingConstants.RIGHT);
+    	ver_author.setFont(new Font("新細明體", Font.PLAIN, 14));
+    	ver_author.setBounds(282, 238, 142, 23);
+		frame.getContentPane().add(ver_author);
 		
 		JButton btnStart = new JButton("開始");
 		btnStart.setFont(new Font("新細明體", Font.PLAIN, 18));
