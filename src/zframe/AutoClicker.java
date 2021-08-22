@@ -39,9 +39,8 @@ public class AutoClicker {
 			@Override
 			public void run() {
 				while(run==true) {
-					clickMouse(InputEvent.BUTTON1_MASK);
+					clickMouse(InputEvent.BUTTON1_MASK, delay);
 					robot.delay(delay);
-//					Thread.sleep(delay);
 				}
 				
 			}
@@ -50,7 +49,7 @@ public class AutoClicker {
 		t1.start();
 	}
 	
-	public void clickMouse(int button) {
+	public void clickMouse(int button, int delay) {
 		try{
 			for(String tkey : keys) {
 		        String code = "VK_" + tkey.toUpperCase();
@@ -61,6 +60,13 @@ public class AutoClicker {
 //			        robot.keyPress(KeyEvent.);
 				robot.keyPress(keyEvent);
 				robot.keyRelease(keyEvent);
+				if(delay > 1) {
+					robot.delay(delay);
+					
+				}else {
+					robot.delay(1);
+				}
+				
 			}
 			
 		} catch (Exception e) {
